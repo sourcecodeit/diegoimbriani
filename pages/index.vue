@@ -6,6 +6,7 @@
 		<SectionSkills />
 		<SectionWork />
 		<SectionContacts />
+		<SectionFooter />
 	</main>
 </template>
 <script setup>
