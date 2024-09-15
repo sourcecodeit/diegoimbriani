@@ -10,6 +10,7 @@ html {
 	@apply bg-zinc-900 text-white/90;
 	font-family: "Azeret Mono", monospace;
 	font-optical-sizing: auto;
+	scroll-behavior: smooth;
 }
 
 .inner-w {
@@ -17,4 +18,7 @@ html {
 }
 strong {
 	@apply text-white font-normal;
+}
+.section-row:nth-child(even) {
+	@apply bg-zinc-950/30;
 }

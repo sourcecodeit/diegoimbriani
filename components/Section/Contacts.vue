@@ -1,5 +1,5 @@
 <template>
-	<SectionRow>
+	<SectionRow id="contacts">
 		<template #section-title>About your project</template>
 		<template #title>Get in touch</template>
 		<template #content>
