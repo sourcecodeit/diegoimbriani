@@ -5,6 +5,8 @@
 		<SectionAbout />
 		<SectionSkills />
 		<SectionWork />
+		<SectionProjects />
+		<SectionServices />
 		<SectionContacts />
 		<SectionFooter />
 	</main>

@@ -20,5 +20,8 @@ strong {
 	@apply text-white font-normal;
 }
 .section-row:nth-child(even) {
-	@apply bg-zinc-950/30;
+	@apply bg-zinc-950/90;
+}
+.section-title::after {
+	@apply content-[''] block h-[4px] w-4 bg-lime-500;
 }
