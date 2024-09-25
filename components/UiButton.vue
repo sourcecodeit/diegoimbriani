@@ -1,6 +1,6 @@
 <template>
 	<a :href="to" :target="blank ? '_blank' : '_self'"
-		class="px-4 py-2 border flex items-center justify-center transition-all duration-300 hover:bg-amber-500 hover:border-amber-500 hover:text-black cursor-pointer"
+		class="px-4 py-2 border gap-2 flex items-center justify-center transition-all duration-300 hover:bg-amber-500 hover:border-amber-500 hover:text-black cursor-pointer"
 		:class="{
 			'bg-amber-500 border-amber-500 text-black hover:bg-slate-100 hover:text-black hover:border-slate-100': highlight,
 			'bg-zinc-700/90 border-white': !highlight,

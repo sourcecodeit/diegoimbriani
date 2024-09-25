@@ -3,6 +3,9 @@
 		<template #section-title>About your project</template>
 		<template #title>Get in touch</template>
 		<template #content>
+			<div class="flex mb-10">
+				<ScheduleButton />
+			</div>
 			<p>
 				Let's talk about your project and how I can help you achieve your goals.
 				<br />
@@ -14,7 +17,7 @@
 	</SectionRow>
 </template>
 <style scoped>
-a {
+a p {
 	@apply text-white underline;
 }
 </style>

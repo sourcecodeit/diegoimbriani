@@ -6,5 +6,18 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/icon'
-  ]
+  ],
+  app: {
+    head: {
+      title: 'Diego Imbriani',
+      meta: [
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' }
+      ],
+      script: [
+        { src: 'https://assets.calendly.com/assets/external/widget.js', async: true }
+      ]
+    }
+  }
 })
