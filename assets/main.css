@@ -23,5 +23,14 @@ strong {
 	@apply bg-zinc-950/90;
 }
 .section-title::after {
-	@apply content-[''] block h-[4px] w-4 bg-lime-500;
+	@apply content-[''] block h-[4px] w-4 bg-lime-500 transition-all duration-300 ease-in-out;
+}
+section:hover .section-title::after {
+	@apply w-full;
+}
+section {
+	@apply blur-sm transition-all duration-500 ease-in-out;
+}
+section.section--active {
+	@apply blur-none;
 }
