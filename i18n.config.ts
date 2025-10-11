@@ -12,7 +12,10 @@ export default defineI18nConfig(() => ({
 			}
 		},
 		it: {
-			welcome: 'Benvenuto'
+			welcome: 'Benvenuto',
+			about: {
+				title: 'About me',
+			}
 		}
 	}
 }))
