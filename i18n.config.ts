@@ -9,12 +9,49 @@ export default defineI18nConfig(() => ({
 			},
 			about: {
 				title: 'About me',
+			},
+			skills: {
+				title: 'Skills'
+			},
+			work: {
+				title: 'Work experience'
+			},
+			projects: {
+				title: 'Projects',
+				subtitle: 'Something I\'m really proud of'
+			},
+			services: {
+				title: 'Services'
+			},
+			contacts: {
+				title: 'About your project',
+				subtitle: 'Get in touch'
 			}
 		},
 		it: {
-			welcome: 'Benvenuto',
+			hero: {
+				contact: 'Contattami',
+				schedule: 'Prenota un incontro'
+			},
 			about: {
-				title: 'About me',
+				title: 'Chi sono',
+			},
+			skills: {
+				title: 'Competenze'
+			},
+			work: {
+				title: 'Esperienza lavorativa'
+			},
+			projects: {
+				title: 'Progetti',
+				subtitle: 'Qualcosa di cui sono davvero orgoglioso'
+			},
+			services: {
+				title: 'Servizi'
+			},
+			contacts: {
+				title: 'Il tuo progetto',
+				subtitle: 'Contattami'
 			}
 		}
 	}

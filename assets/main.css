@@ -31,6 +31,9 @@ section:hover .section-title::after {
 section {
 	@apply saturate-0 opacity-60 transition-all duration-500 ease-in-out;
 }
+section:hover {
+	@apply saturate-100 opacity-100 text-white;
+}
 section.section--active {
 	@apply saturate-100 opacity-100
 }

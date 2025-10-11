@@ -1,7 +1,7 @@
 <template>
 	<SectionRow id="projects">
-		<template #section-title>Projects</template>
-		<template #title>Something I'm really proud of</template>
+		<template #section-title>{{ $t('projects.title') }}</template>
+		<template #title>{{ $t('projects.subtitle') }}</template>
 		<template #content>
 			<p class="mb-2">A list of recent projects I've been involved in.</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

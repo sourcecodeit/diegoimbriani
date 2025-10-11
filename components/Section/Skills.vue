@@ -1,6 +1,6 @@
 <template>
 	<SectionRow>
-		<template #section-title>SKILLS</template>
+		<template #section-title>{{ $t('skills.title') }}</template>
 		<template #content v-if="locale === 'en'">
 			With extensive experience in full-stack development and cloud architecture, I have honed a diverse set of skills essential for
 			building robust and scalable solutions. Below are some of my key competencies:

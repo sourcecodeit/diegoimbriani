@@ -1,7 +1,7 @@
 <template>
 	<SectionRow id="contacts">
-		<template #section-title>About your project</template>
-		<template #title>Get in touch</template>
+		<template #section-title>{{ $t('contacts.title') }}</template>
+		<template #title>{{ $t('contacts.subtitle') }}</template>
 		<template #content>
 			<div class="flex mb-10">
 				<ScheduleButton />

@@ -1,6 +1,6 @@
 <template>
 	<SectionRow mode="full">
-		<template #section-title>Services</template>
+		<template #section-title>{{ $t('services.title') }}</template>
 		<template #full>
 			<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
 				<ServiceTile>
