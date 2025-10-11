@@ -4,23 +4,16 @@
 		<template #full>
 			<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
 				<ServiceTile>
-					<template #title>Consulting</template>
-					<template #content>I provide expert consulting to help you choose the best technical stack for your
-						project,
-						tailored to the strengths of your current development team. This ensures smoother
-						implementation, higher productivity, and long-term scalability from day one.</template>
+					<template #title>Full-Stack Development</template>
+					<template #content>I build complete web applications handling both backend and frontend development. From API design to user interfaces, I deliver end-to-end solutions using modern technologies like Node.js, Java, Vue, React, and TypeScript.</template>
 				</ServiceTile>
 				<ServiceTile>
-					<template #title>Tech Leadership</template>
-					<template #content>As a seasoned technical leader, I can oversee and guide external development
-						teams, ensuring alignment with your business goals, high-quality delivery, and smooth
-						collaboration across all project phases.</template>
+					<template #title>Cloud Architecture & System Design</template>
+					<template #content>I design and implement scalable cloud architectures on AWS, leveraging services like RDS, SQS, Redis, and Kubernetes. I specialize in microservices architecture, distributed systems, and optimizing for performance and reliability.</template>
 				</ServiceTile>
 				<ServiceTile>
-					<template #title>Software Architecture Design</template>
-					<template #content>I specialize in designing robust, scalable software architectures that are
-						tailored to your business requirements. My focus is on optimizing performance, security, and
-						future scalability, ensuring a solid foundation for your technology.</template>
+					<template #title>Performance Optimization & Technical Consulting</template>
+					<template #content>I help teams improve code quality, optimize application performance, and implement best practices. From database optimization to CI/CD pipelines, I provide hands-on technical guidance to enhance your development processes.</template>
 				</ServiceTile>
 			</div>
 		</template>

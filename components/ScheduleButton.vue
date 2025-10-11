@@ -1,5 +1,5 @@
 <template>
-	<UiButton @click="schedule" highlight>Schedule time with me
+	<UiButton @click="schedule" highlight>{{ $t('hero.schedule') }}
 		<Icon name="mdi:calendar" />
 	</UiButton>
 </template>

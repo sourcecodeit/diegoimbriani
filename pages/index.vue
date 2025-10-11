@@ -13,9 +13,9 @@
 </template>
 <script setup>
 useHead({
-	title: 'Diego Imbriani - Fractional CTO',
+	title: 'Diego Imbriani - Senior Full Stack Developer | Cloud & System Design',
 	meta: [
-		{ name: 'description', content: 'Website of Diego Imbriani, with my work experience, skills and contact details.' },
+		{ name: 'description', content: 'Senior Full Stack Developer specializing in Cloud Architecture and System Design. Expertise in Node.js, Java, Vue, React, AWS, Kubernetes, and microservices.' },
 	],
 })
 
