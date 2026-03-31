@@ -7,8 +7,8 @@ interface TimelineItem {
 const timeline: TimelineItem[] = [
   {
     period: '2026–present',
-    company: 'Full Stack Developer',
-    description: 'Cybersecurity',
+    company: 'Cybersecurity',
+    description: 'Full Stack Developer',
   },
   {
     period: '2020–2026',
