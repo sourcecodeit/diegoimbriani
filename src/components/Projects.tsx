@@ -26,37 +26,48 @@ const projects: Project[] = [
     image: '/images/nezuko.jpg',
     link: 'https://github.com/sourcecodeit/nezuko-crm',
   },
+  {
+    title: 'Citizen Science',
+    description: 'An interactive map of the distribution of Italian spiders.',
+    image: '/images/citizen-science.jpg',
+  },
 ];
 
 export default function Projects() {
   return (
     <section className="mb-24">
       <h2 className="text-3xl md:text-4xl font-bold mb-8">Projects</h2>
-      <div className="grid md:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <a
-            key={project.title}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-gray-200 overflow-hidden hover:border-gray-400 transition-colors block"
-          >
-            <div className="aspect-square">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+      <div className="grid md:grid-cols-2 gap-6">
+        {projects.map((project) => {
+          const Card = (
+            <>
+              <div className="aspect-square">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                  {project.title}
+                  {project.link && <ExternalLink size={18} className="text-gray-600" />}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{project.description}</p>
+              </div>
+            </>
+          );
+          const className = "border border-gray-200 overflow-hidden hover:border-gray-400 hover:shadow-lg hover:scale-[1.02] transition-all duration-300 block";
+          return project.link ? (
+            <a key={project.title} href={project.link} target="_blank" rel="noopener noreferrer" className={className}>
+              {Card}
+            </a>
+          ) : (
+            <div key={project.title} className={className}>
+              {Card}
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                {project.title}
-                <ExternalLink size={18} className="text-gray-600" />
-              </h3>
-              <p className="text-gray-600 leading-relaxed">{project.description}</p>
-            </div>
-          </a>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

@@ -46,18 +46,24 @@ export default function Timeline() {
   return (
     <section className="mb-24">
       <h2 className="text-3xl md:text-4xl font-bold mb-8">Career</h2>
-      <div className="space-y-8">
-        {timeline.map((item, index) => (
-          <div key={index} className="flex gap-6">
-            <div className="text-gray-500 font-mono text-sm w-32 flex-shrink-0 pt-1">
-              {item.period}
+      <div className="relative">
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gray-200"></div>
+        <div className="space-y-8">
+          {timeline.map((item, index) => (
+            <div key={index} className="flex gap-6 relative">
+              <div className="relative flex-shrink-0">
+                <div className={`w-[15px] h-[15px] rounded-full border-2 mt-1.5 ${
+                  index === 0 ? 'bg-gray-900 border-gray-900' : 'bg-white border-gray-300'
+                }`}></div>
+              </div>
+              <div className="flex-1 pb-2">
+                <div className="text-gray-500 font-mono text-sm mb-1">{item.period}</div>
+                <h3 className="text-xl font-bold mb-1">{item.company}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
             </div>
-            <div className="flex-1">
-              <h3 className="text-xl font-bold mb-1">{item.company}</h3>
-              <p className="text-gray-600 leading-relaxed">{item.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
